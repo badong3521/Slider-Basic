@@ -30,7 +30,7 @@ btnNext.addEventListener("click", function () {
   } else {
     currentIndex++;
   }
-  imgCurrent.style.animation = "sliderNext 0.5s ease-in-out ";
+  imgCurrent.style.animation = "sliderNext 0.5s ease";
   setTimeout(() => {
     imgCurrent.style.animation = "";
   }, 400);
@@ -43,9 +43,15 @@ btnPrev.addEventListener("click", function () {
   } else {
     currentIndex--;
   }
-  imgCurrent.style.animation = "sliderPrev 0.5s ease-in-out ";
+  imgCurrent.style.animation = "sliderPrev 0.5s ease";
   setTimeout(() => {
     imgCurrent.style.animation = "";
   }, 400);
   updateImg(currentIndex);
 });
+
+
+setInterval(() => {
+  btnNext.click();
+}, 5000);
+
