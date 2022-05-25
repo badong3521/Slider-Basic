@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1 class="header">Register</h1>
+      <form onsubmit="Register()" class="form-register">
+        <div class="input-field">
+          <label for="email">Email address</label>
+          <input type="text" id="email" placeholder="Email" />
+        </div>
+        <div class="input-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Password" />
+          <input
+            type="checkbox"
+            class="showPassword"
+            onclick="showPassword()"
+            placeholder="checkbox"
+          />
+        </div>
+
+        <div class="input-field">
+          <label for="password-confirm">Password confirm</label>
+          <input
+            type="password"
+            id="password-confirm"
+            placeholder="Confirm Password"
+          />
+          <input
+            type="checkbox"
+            class="showPasswordConfirm"
+            onclick="showPasswordConfirm()"
+            placeholder="checkbox"
+          />
+        </div>
+        <div class="input-field">
+          <a class="login" href="../login.html">LogIn</a>
+        </div>
+        <button type="submit" class="btn" id="btn-register">
+          Register
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </button>
+      </form>
+    </div>
+  </body>
+  <script src="../index.js"></script>
+</html>
