@@ -102,7 +102,7 @@ function logIn() {
   var data = JSON.parse(users);
   console.log(data);
   if (data.email == email && data.password == password) {
-    window.location.href = "index.html";
+    window.location.href = "main.html";
     alert("Bạn đã đăng nhập thành công <3");
   } else if (email == "" && password == "") {
     alert("Bạn chưa nhập mật khẩu tài khoản :((");

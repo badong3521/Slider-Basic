@@ -5,34 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./Main/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css
-    "
-    />
+    <link rel="stylesheet" href="./Login/login.css" />
   </head>
   <body>
-    <div class="main">
-      <div class="container">
-        <img src="./image/image1.jpg" alt="img" class="current-img" />
-        <div class="btn-control">
-          <div class="btn-prev"><i class="fa-solid fa-angle-left"></i></div>
-          <div class="btn-next"><i class="fa-solid fa-angle-right"></i></div>
+    <div class="wrapper">
+      <h1 class="header">LogIn</h1>
+      <form onsubmit="logIn()" class="form-register">
+        <div class="input-field">
+          <label for="email">Email address</label>
+          <input type="text" id="email" placeholder="Email" />
         </div>
-      </div>
-      <div class="list-img">
-        <img class="item-img active" src="./image/image1.jpg" alt="image1" />
-        <img class="item-img" src="./image/image2.jpg" alt="image1" />
-        <img class="item-img" src="./image/image3.jpg" alt="image1" />
-        <img class="item-img" src="./image/image4.jpg" alt="image1" />
-        <img class="item-img" src="./image/image5.jpg" alt="image1" />
-        <img class="item-img" src="./image/image6.jpg" alt="image1" />
-      </div>
+        <div class="input-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Password" />
+          <input
+            type="checkbox"
+            class="showPassword"
+            onclick="showPassword()"
+            placeholder="checkbox"
+          />
+        </div>
+
+        <div class="">
+          <a class="login" href="../Register/register.html">Register</a>
+        </div>
+        <button type="submit" class="btn" id="btn-register">
+          LogIn
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </button>
+      </form>
     </div>
   </body>
   <script src="./index.js"></script>
