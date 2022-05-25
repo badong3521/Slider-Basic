@@ -23,6 +23,7 @@ itemImgs.forEach((itemImg, index) => {
   });
 });
 
+<<<<<<< HEAD
 if (btnNext && btnPrev) {
   btnNext.addEventListener("click", function () {
     if (currentIndex == itemImgs.length - 1) {
@@ -36,6 +37,20 @@ if (btnNext && btnPrev) {
     }, 400);
     updateImg(currentIndex);
   });
+=======
+btnNext.addEventListener("click", function () {
+  if (currentIndex == itemImgs.length - 1) {
+    currentIndex = 0;
+  } else {
+    currentIndex++;
+  }
+  imgCurrent.style.animation = "sliderNext 0.5s ease";
+  setTimeout(() => {
+    imgCurrent.style.animation = "";
+  }, 400);
+  updateImg(currentIndex);
+});
+>>>>>>> 23ea6bd42fdd4ccc1e8d713557df7d5945afeab5
 
   btnPrev.addEventListener("click", function () {
     if (currentIndex == 0) {
@@ -82,6 +97,7 @@ function showPassword() {
   } else {
     showPassword.type = "password";
   }
+<<<<<<< HEAD
 }
 function showPasswordConfirm() {
   var showPasswordConfirm = $("#password-confirm");
@@ -110,3 +126,17 @@ function logIn() {
     alert("Vui lòng đăng kí tài khoản ^^");
   }
 }
+=======
+  imgCurrent.style.animation = "sliderPrev 0.5s ease";
+  setTimeout(() => {
+    imgCurrent.style.animation = "";
+  }, 400);
+  updateImg(currentIndex);
+});
+
+
+setInterval(() => {
+  btnNext.click();
+}, 5000);
+
+>>>>>>> 23ea6bd42fdd4ccc1e8d713557df7d5945afeab5
